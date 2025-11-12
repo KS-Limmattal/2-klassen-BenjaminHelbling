@@ -5,10 +5,8 @@ public class PointTester {
     public static void main(String[] args) {
         Point p = new Point(2,5);
         Point q = new Point(p);
-        double px = p.getX();
-        double py = p.getY();
         System.out.println(q);
-        p.setLocation(py,px);
+        p.setLocation(p.getY(),p.getX());
         System.out.println(p);
         System.out.println(q);
     }
